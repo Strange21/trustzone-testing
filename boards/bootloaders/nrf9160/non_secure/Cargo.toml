@@ -1,0 +1,27 @@
+[package]
+name = "non-secure"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
+#trustzone-m-nonsecure-rt = { path = "../../../tools/trustzone-m-tools/nonsecure-rt" }#
+#trustzone-m-macros = { path = "../../../tools/trustzone-m-tools/macros" }
+
+nrf9160-pac = "0.12.2"
+nrf9160-hal = { version = "0.16.0", default-features = false }
+
+#rustBoot-hal = {path = "../../../hal", features = ["nrf9160", "nrf"]}
+#defmt = {version = "0.3.1", optional = true}
+#defmt-rtt = {version = "0.4", optional = true}
+
+[build-dependencies]
+#trustzone-m-tools = { path = "../../../tools/trustzone-m-tools/tools" }
+
+#[features]
+#default = ["defmt", "defmt-rtt"]
+
+#[lib]
+#crate-type = ["staticlib"]

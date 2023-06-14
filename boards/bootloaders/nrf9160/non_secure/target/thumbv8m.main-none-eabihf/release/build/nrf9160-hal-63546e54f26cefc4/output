@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/release/build/nrf9160-hal-63546e54f26cefc4/out
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=memory.x

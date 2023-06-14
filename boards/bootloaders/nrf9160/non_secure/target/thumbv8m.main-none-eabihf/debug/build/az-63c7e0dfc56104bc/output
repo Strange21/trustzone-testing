@@ -1,0 +1,6 @@
+$ mkdir -p "/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/debug/build/az-63c7e0dfc56104bc/out/try_track_caller"
+$ cd "/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/debug/build/az-63c7e0dfc56104bc/out/try_track_caller"
+$ printf '%s' "// try_tra"... > "/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/debug/build/az-63c7e0dfc56104bc/out/try_track_caller/try_track_caller.rs"
+$ cd "/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/debug/build/az-63c7e0dfc56104bc/out/try_track_caller" && "/home/nuc2kor/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustc" "try_track_caller.rs" "--emit=dep-info,metadata" >& /dev/null
+cargo:rustc-cfg=track_caller
+$ rm -r "/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/debug/build/az-63c7e0dfc56104bc/out/try_track_caller"

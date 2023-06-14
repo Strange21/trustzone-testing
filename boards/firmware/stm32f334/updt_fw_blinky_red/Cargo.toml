@@ -1,0 +1,27 @@
+[package]
+name = "stm32f334_updtfw"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "stm32f334_updtfw"
+bench = false
+doctest = false
+test = false
+
+[dependencies]
+#defmt = {version = "0.3.1", optional = true}
+#defmt-rtt = {version = "0.3.2", optional = true}
+cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7"
+rustBoot-hal ={path = "../../../hal",default-features = false,features = ["stm32f334"]}
+panic-probe = { version = "0.3.0" }
+rustBoot-update = {path = "../../../update", features = ["stm32f334"]}
+
+# board-specific features
+[dependencies.stm32f3xx-hal]
+version = "0.9.1"
+features = ["stm32f334x8"]
+
+[features]
+default = []

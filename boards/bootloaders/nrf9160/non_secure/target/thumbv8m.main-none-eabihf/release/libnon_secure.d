@@ -1,0 +1,1 @@
+/home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/target/thumbv8m.main-none-eabihf/release/libnon_secure.rlib: /home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/../memory.x /home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/build.rs /home/nuc2kor/Desktop/devspace/test/trustzone/non_secure/src/lib.rs

@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "non_secure",
+    "secure"
+]
+
+[profile.release]
+debug = true
+lto = true

@@ -1,0 +1,4 @@
+cargo:rerun-if-changed=trustzone_memory.x.in
+cargo:rerun-if-changed=region_asserts.x.in
+cargo:rustc-link-search=/home/nuc2kor/Desktop/devspace/prod/forked/my_rustBoot/boards/tools/trustzone-m-tools/target/debug/build/trustzone-m-secure-rt-c95dc53cf0244da2/out
+cargo:rerun-if-changed=build.rs

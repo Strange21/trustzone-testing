@@ -1,0 +1,1 @@
+cargo:rustc-link-search=/home/nuc2kor/Desktop/devspace/prod/forked/my_rustBoot/boards/tools/trustzone-m-tools/target/debug/build/defmt-711f916a82562a40/out

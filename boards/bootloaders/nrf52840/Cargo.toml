@@ -1,0 +1,25 @@
+[package]
+build = "build.rs"
+edition = "2018"
+name = "nrf52840"
+version = "0.1.0"
+
+# makes `cargo check --all-targets` work
+[[bin]]
+bench = false
+doctest = false
+name = "nrf52840"
+test = false
+
+[dependencies]
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7"
+defmt = {version = "0.3.2", optional = true}
+defmt-rtt = {version = "0.4.0", optional = true}
+rustBoot-hal = {path = "../../hal", features = ["nrf52840", "nrf"]}
+rustBoot-update = {path = "../../update", features = ["nrf52840"]}
+
+[features]
+default = ["defmt", "defmt-rtt"]
+
+# [workspace]

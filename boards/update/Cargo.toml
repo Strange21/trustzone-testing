@@ -1,0 +1,42 @@
+[package]
+authors = ["Twitter: @npashi <nihal.pasham@gmail.com>"]
+categories = ["embedded", "no_std", "authentication"]
+description = """
+This is a rustBoot dependency. It allows for multi-slot partitioning of a flash device 
+and can be used to perform power-interruptible A/B updates.  
+"""
+documentation = ""
+edition = "2018"
+homepage = ""
+keywords = ["security", "bootloader", "firmware", "authentication", "update"]
+license = "MIT"
+name = "rustBoot-update"
+readme = "README.md"
+repository = "https://github.com/nihalpasham/rustBoot"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# makes `cargo check --all-targets` (used by Rust-Analyzer) work
+[lib]
+bench = false
+doctest = false
+test = false
+
+[dependencies]
+defmt = {version = "0.3.2", optional = true}
+rustBoot = {path = "../../rustBoot", default-features = true, features = ["mcu"]}
+rustBoot-hal = {path = "../hal"}
+
+[features]
+default = []
+nrf9160 = ["rustBoot/nrf9160"]
+nrf52840 = ["rustBoot/nrf52840"]
+stm32f411 = ["rustBoot/stm32f411"]
+stm32f446 = ["rustBoot/stm32f446"]
+stm32f469 = ["rustBoot/stm32f469"]
+stm32h723 = ["rustBoot/stm32h723"]
+stm32f746 = ["rustBoot/stm32f746"]
+stm32f334 = ["rustBoot/stm32f334"]
+rp2040 = ["rustBoot/rp2040"]
+
